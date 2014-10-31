@@ -1,0 +1,27 @@
+Bootstrap is the first framework that uses HTML, CSS, Javascript for faster and easier web development.
+It is supported by almost all browsers
+
+Bootstrap is easy to get started with basic HTML and CSS knowledge. 
+
+Bootstrap helps in a responsive web design. 
+
+Bootstrap packages include Scaffoldings which is a basic picture of Grid systems, link styles, backgrounds. 
+
+Bootstrap packages also include CSS, Components, Javascript plugins, customizations. 
+
+Bootstrap tree stucture is like:
+
+Bootstrap: 
+	css
+		bootstrap.css
+		bootstrap.min.css
+		bootstrap-responsive.css
+		bootstrap-responsive.min.css
+	img
+		img1
+		img2
+	js
+		bootstrap.js
+		bootstrap.min.js 
+
+This is the pre compiled structure of Bootstrap.
