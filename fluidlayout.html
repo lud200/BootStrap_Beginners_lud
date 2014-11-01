@@ -1,5 +1,11 @@
 <!--
-	This is an example of Fixed layout. 
+	To convert a fixed layout to fluid layout, we should have to define
+	the class as container-fluid. 
+	The container-fluid allows uses the window to maximum utilization. 
+
+	The container-fluid allows the usage of horizontal margin of 15px, 
+	on element offset lefthand margin -15px used in .rows.
+
 -->
 
 <html>
@@ -19,7 +25,25 @@
 	</style>
 	</head>
 	<body>
+		<!-- Navbars are responsive meta components that serve as navigation header for application.
+
+		They are collapsed for mobile views and automatically adjust as available viewport width increases.
+
+		Bootstrap does not know how much space the content in your navigation bar. We can run into issues where content gets wrapped up into second row.
+
+		Hide certain navbar items at certain screen size using responsive utility class
+
+		If we don't want default navigation bar, Boot strap provides an alternative. This can be done by changing .navbar-defualt to .navbar-inverse
+
+		Navigation bar can be fixed at the top or bottom of the page with the help of navbar-fixed-top. This stays at the top independent of page scroll. 
+
+		navbar-fixed-bottom makes the navbar fixed at the bottom. 
+
+		navbar-right class is used to right allign navigation bar buttons. 
+
+	-->
 	<nav id="ludNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
 				<span class="sr-only">Toogle Navigation</span>
@@ -37,7 +61,13 @@
 		</div>
 	</div>
 </nav>
-<div class="container">
+<div class="container-fluids">
+	<!-- Jumbotron can increase the size of heading and a lot of margin for landing page content. 
+	For using Jumbotron:
+	Create a div container class of Jumbotron in addition to a larger<h1>. The font weight will reduce to 200px.
+
+	For full width and without rounded corners, use jumbotron class outside container class.
+-->
 	<div class="jumbotron">
 		<h1>Learning Bootstrap</h1>
 		<p>These are my practice Bootstrap lessons. I got an idea on CSS design patterns, 
