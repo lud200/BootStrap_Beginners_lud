@@ -130,6 +130,58 @@
 		<form>
 			<input type="text" class="form-control" placeholder="Readonly Input" readonly="readonly">
 		</form>
+
+		<!-- Creating disabled fieldsets
+
+			We can create disabled field set by adding class attribute "disabled" at the form level
+		 -->
+
+		<form class="form-horizontal">
+			<fieldset disabled="disabled">
+				<div class="form-group">
+					<label for="inputEmail" class="control-label col-xs-2">Email</label>
+					<div class="col-xs-10">
+						<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="inputPassword" class="control-label col-xs-2">Password</label>
+					<div class="col-xs-10">
+						<input type="password" class="form-control" id="password" placeholder="Password">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-xs-offset-2 col-xs-10">
+						<div class="checkbox">
+							<label><input type="checkbox"> Remember me</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-xs-offset-2 col-xs-10">
+						<button type="submit" class="btn btn-primary">Login</button>
+					</div>
+				</div>
+
+			</fieldset>
+		</form>
+
+		<!-- Placing Helper texts
+			
+			We can place the place helpers with the class "help-block"
+		 
+		 -->
+		<form>
+			<input type="text" class="form-control">
+			<span class="help-block">
+				This is the helper block. 
+			</span>
+		</form>
+
+		
 	</div>
 </body>
 </html>
